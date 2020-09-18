@@ -1870,7 +1870,7 @@ body {
     content: '';
     width: 12px;
     height: 8px;
-    background: url(/assets/images/questions/arrow.svg) center center no-repeat;
+    background: url(../assets/images/questions/arrow.svg) center center no-repeat;
   }
   .questions__tab .hide + label:hover a {
     text-decoration: underline;
@@ -1878,7 +1878,7 @@ body {
   }
   .questions__tab .hide + label:hover:after {
     color: #F68633;
-    background: url(/assets/images/questions/arrow-orange.svg) center center no-repeat;
+    background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
   }
 
   .connect {
