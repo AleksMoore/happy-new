@@ -225,7 +225,7 @@
                     content: '';
                     width: 12px;
                     height: 8px;
-                    background: url(/assets/images/questions/arrow.svg) center center no-repeat;
+                    background: url(../assets/images/questions/arrow.svg) center center no-repeat;
                 }
 
                 &:hover{
@@ -237,7 +237,7 @@
 
                     &:after{
                         color:  #F68633;
-                        background: url(/assets/images/questions/arrow-orange.svg) center center no-repeat;
+                        background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
                     }
                 }
             }
