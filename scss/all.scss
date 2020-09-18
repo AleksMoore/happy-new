@@ -32,6 +32,102 @@ body {
     flex-direction: column;
 }
 
+/* Mobile Menu  */
+
+.mobile-menu{
+	display: none;
+
+	.hidden-menu-ticker {
+		display: none;
+	}
+
+	.btn-menu {
+		color: #fff;
+		padding: 5px;
+		position: absolute;
+		top: 4%;
+		right: 5%;
+		cursor: pointer;
+		transition: left .23s;
+		z-index: 3;
+		width: 25px;
+	}
+	 
+	.btn-menu span {
+		display: block;
+		height: 2px;
+		background-color: #ffffff;
+		margin: 5px 0 0;
+		transition: all .1s linear .23s;
+		position: relative;
+	}
+	 
+	.btn-menu span.first {
+		margin-top: 0;
+	}
+
+	.hidden-menu {
+		display: block;
+		position: fixed;
+		list-style:none;
+		padding: 15px 30px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		background-color: #fdf7f7;
+		height: 300px;
+		top: 0;
+		left: -100%;
+		transition: left .2s;
+		z-index: 2;
+	}
+	 
+	.hidden-menu li {
+		padding:10px 0;
+
+		&:first-child{
+			margin-bottom: 40px;
+		}
+
+		&:nth-child(2){
+
+			& a{
+				font-weight: 700;
+			}
+		}
+	}
+	 
+	.hidden-menu li a {
+		font-size:15px;
+		color:#4A4A4A;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.hidden-menu-ticker:checked ~ .btn-menu {
+		right: 15px;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+		left: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.first {
+		transform: rotate(45deg);
+		top: 4px;
+		background-color: #000000;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.second {
+		opacity: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.third {
+		transform: rotate(-45deg);
+		top: -10px;
+		background-color: #000000;
+	}
+}
+	
 /* Header */
 
 .header{
@@ -110,7 +206,6 @@ body {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		align-items: space-around;
 
 		& h1{
 			font-family: $second-font;
@@ -226,7 +321,7 @@ body {
 		max-width: 280px;
 
 		& strong{
-			font-size: $second-font;
+			font-size: $hight-size;
 			font-family: $second-font;
 			font-weight: 700;
 			color: $black;
@@ -425,7 +520,8 @@ body {
 		box-sizing: border-box;
 		display: flex;
     	flex-direction: column;
-    	justify-content: space-between;
+		justify-content: flex-start;
+		position: relative;
 
 		& img{
 			width: auto!important;
@@ -441,14 +537,13 @@ body {
 		font-size: $little-size;
 		color: $black;
 		line-height: 160%;
-		margin-bottom: 68px;
 	}
 
 	&__person{
 		display: flex;
 		flex-direction: row;
-		max-height: 80px;
-		height: 100%;
+		position: absolute;
+		bottom: 5%;
 	}
 
 	&__left{
@@ -704,7 +799,7 @@ body {
 /* Questions */
 
 .questions{
-	padding: 0 0 200px;
+	padding: 150px 0 200px;
 	width: 100%;
     display: flex;
 	justify-content: center;
