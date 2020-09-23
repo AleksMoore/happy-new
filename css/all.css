@@ -594,7 +594,7 @@ body {
       flex-wrap: wrap;
 }
 .header__item {
-  max-width: 360px;
+  max-width: 363px;
   width: 100%;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
@@ -619,7 +619,7 @@ body {
 }
 .header__item p {
   margin: 0;
-  font-size: 18px;
+  font-size: 14px;
   color: #FFFFFF;
   line-height: 160%;
   max-width: 255px;
@@ -715,18 +715,21 @@ body {
   max-width: 280px;
 }
 .over__item strong {
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #000000;
   line-height: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 .over__item p {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: #000000;
-  line-height: 140%;
-  max-width: 250px;
+  line-height: 22px;
+  max-width: 260px;
+  margin: 0;
 }
 
 /* Partners */
@@ -1268,14 +1271,22 @@ body {
   width: 100%;
   position: relative;
 }
-.questions__tab .hide + label::after {
-  content: '+';
+.questions__tab .hide + label:after {
+  content: '';
+  width: 12px;
+  height: 8px;
   position: absolute;
-  top: 30%;
+  top: 5px;
   right: 0;
-  color: #8D8D8D;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  background: url(../assets/images/questions/arrow.svg) center center no-repeat;
+}
+.questions__tab .hide + label:hover a {
+  text-decoration: underline;
+  color: #F68633;
+}
+.questions__tab .hide + label:hover:after {
+  color: #F68633;
+  background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
 }
 .questions__tab .hide:checked + label {
   border-bottom: 0;
@@ -1463,6 +1474,9 @@ body {
 }
 .connect__right {
   width: 50%;
+}
+.connect__right iframe {
+  height: 630px;
 }
 .connect__right form {
   padding: 90px 78px 60px;
@@ -1865,20 +1879,6 @@ body {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-  }
-  .questions__tab .hide + label:after {
-    content: '';
-    width: 12px;
-    height: 8px;
-    background: url(../assets/images/questions/arrow.svg) center center no-repeat;
-  }
-  .questions__tab .hide + label:hover a {
-    text-decoration: underline;
-    color: #F68633;
-  }
-  .questions__tab .hide + label:hover:after {
-    color: #F68633;
-    background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
   }
 
   .connect {
