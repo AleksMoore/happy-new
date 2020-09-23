@@ -32,6 +32,7 @@ body {
     flex-direction: column;
 }
 
+
 /* Mobile Menu  */
 
 .mobile-menu{
@@ -224,7 +225,7 @@ body {
 	}
 
 	&__item{
-		max-width: 360px;
+		max-width: 363px;
 		width: 100%;
 		margin-bottom: 30px;
 		font-family: $second-font;
@@ -251,7 +252,7 @@ body {
 
 		& p{
 			margin: 0;
-			font-size: $main-size;
+			font-size: $little-size;
 			color: $white;
 			line-height: 160%;
 			max-width: 255px;
@@ -321,19 +322,22 @@ body {
 		max-width: 280px;
 
 		& strong{
-			font-size: $hight-size;
+			font-size: $second-size;
 			font-family: $second-font;
 			font-weight: 700;
 			color: $black;
 			line-height: 20px;
+			display: block;
+			margin-bottom: 20px;
 		}
 
 		& p{
 			font-size: $little-size;
 			font-family: $second-font;
 			color: $black;
-			line-height: 140%;
-			max-width: 250px;
+			line-height: 22px;
+			max-width: 260px;
+			margin: 0;
 		}
 	}
 }
@@ -844,13 +848,27 @@ body {
 			width: 100%;
 			position: relative;
 
-			&::after{
-				content: '+';
+			&:after{
+				content: '';
+				width: 12px;
+				height: 8px;
 				position: absolute;
-				top: 30%;
+				top: 5px;
 				right: 0;
-				color: $middle-grey;
-				transform: translateY(-50%);
+				background: url(../assets/images/questions/arrow.svg) center center no-repeat;
+			}
+
+			&:hover{
+
+				a{
+					text-decoration: underline;
+					color:  #F68633;
+				}
+
+				&:after{
+					color:  #F68633;
+					background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
+				}
 			}
 		}
 		/* вид текста label при активном переключателе */
@@ -1023,6 +1041,11 @@ body {
 
 	&__right{
 		width: 50%;
+
+		iframe{	
+			height: 630px;	
+		}
+
 
 		& form{
 			padding: 90px 78px 60px;

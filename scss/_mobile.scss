@@ -220,26 +220,6 @@
                 padding: 0 20px 0 0;
                 width: 100%;
                 box-sizing: border-box;
-
-                &:after{
-                    content: '';
-                    width: 12px;
-                    height: 8px;
-                    background: url(../assets/images/questions/arrow.svg) center center no-repeat;
-                }
-
-                &:hover{
-
-                    a{
-                        text-decoration: underline;
-                        color:  #F68633;
-                    }
-
-                    &:after{
-                        color:  #F68633;
-                        background: url(../assets/images/questions/arrow-orange.svg) center center no-repeat;
-                    }
-                }
             }
         }
     }
