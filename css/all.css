@@ -619,7 +619,7 @@ body {
   position: absolute;
   right: -35px;
   top: 0;
-  background: url(/assets/images/upload.svg) top center no-repeat;
+  background: url(../assets/images/upload.svg) top center no-repeat;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
