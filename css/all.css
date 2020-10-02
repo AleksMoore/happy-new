@@ -445,6 +445,7 @@ body {
 }
 .mobile-menu .hidden-menu-ticker:checked ~ .btn-menu {
   right: 15px;
+  position: fixed;
 }
 .mobile-menu .hidden-menu-ticker:checked ~ .hidden-menu {
   left: 0;
@@ -580,6 +581,62 @@ body {
   font-size: 60px;
   color: #FFFFFF;
   margin: 0 0 60px;
+}
+.header__docs {
+  font-family: "Montserrat", sans-serif;
+}
+.header__docs h4 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin: 0 0 70px;
+}
+.header__docs p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 11px;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+.header__docs a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  position: relative;
+}
+.header__docs a::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -35px;
+  top: 0;
+  background: url(/assets/images/upload.svg) top center no-repeat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__docs a:last-child {
+  margin: 0;
+}
+.header__docs a:hover {
+  text-decoration: none;
+}
+.header__docs a:hover::after {
+  right: -40px;
+}
+.header__doc {
+  margin-bottom: 70px;
+}
+.header__doc:last-child {
+  margin: 0;
 }
 .header__description {
   max-width: 800px;
@@ -1217,7 +1274,7 @@ body {
 
 /* Questions */
 .questions {
-  padding: 150px 0 200px;
+  padding: 150px 0 100px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1434,7 +1491,7 @@ body {
 
 /* Connect */
 .connect {
-  padding: 0 0 200px;
+  padding: 100px 0 200px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1474,9 +1531,12 @@ body {
 }
 .connect__right {
   width: 50%;
-}
-.connect__right iframe {
-  height: 630px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .connect__right form {
   padding: 90px 78px 60px;
@@ -1538,6 +1598,25 @@ body {
 .connect__right form input:focus {
   background: #F5F5F5;
   border-bottom: 1.40984px solid #FF6D00;
+}
+.connect__form {
+  padding: 30px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFFFFF;
+  -webkit-box-shadow: -25.4108px -25.4108px 67.7621px #F9F9F9, 25.4108px 25.4108px 67.7621px rgba(55, 84, 170, 0.15), inset 3.38811px 3.38811px 16.9405px rgba(255, 255, 255, 0.5);
+          box-shadow: -25.4108px -25.4108px 67.7621px #F9F9F9, 25.4108px 25.4108px 67.7621px rgba(55, 84, 170, 0.15), inset 3.38811px 3.38811px 16.9405px rgba(255, 255, 255, 0.5);
+  border-radius: 16.9405px;
+  max-width: 565px;
+  max-height: 580px;
+  width: 100%;
+  height: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .connect__button {
   margin-top: 60px;
@@ -1733,6 +1812,13 @@ body {
     max-width: 80%;
     font-size: 14px;
   }
+  .header__docs {
+    max-width: 480px;
+    width: 100%;
+  }
+  .header__docs a:after {
+    right: -5px;
+  }
 
   .over {
     padding: 70px 30px;
@@ -1902,6 +1988,11 @@ body {
     line-height: 20px;
     margin: 0 0 50px;
   }
+  .connect__right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .connect__right form {
     padding: 0;
     -webkit-box-shadow: none;
@@ -1923,6 +2014,12 @@ body {
   }
   .connect__right form input::placeholder {
     font-size: 16px;
+  }
+  .connect__form {
+    padding: 0;
+    height: 500px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .connect__left, .connect__right {
     width: 100%;
@@ -2012,9 +2109,25 @@ body {
     line-height: 12px;
   }
 }
+@media (max-width: 480px) {
+  .header__docs h4 {
+    margin: 0 0 20px;
+  }
+  .header__docs a {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .header__docs a:after {
+    top: 50px;
+    left: 0;
+  }
+  .header__doc {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 375px) {
   .header {
     background: url(../assets/images/header/m-background-image.jpg) top center no-repeat;
-    padding: 20px 30px 30px;
+    padding: 20px 30px 50px;
   }
 }

@@ -43,9 +43,9 @@
 				<img src="./assets/images/logo-mobile.svg" alt="">
 			</a></li>  
 			<li><a href="tel:88003500359">8-800-350-03-59</a></li>
-			<li><a href="">Как стать партнером</a></li> 
-			<li><a href="">О компании</a></li>  
-			<li><a href="">Контакты</a></li> 
+			<li><a class="header__link" href="#">Как стать партнером</a></li> 
+			<li><a class="header__link" href="#about">О компании</a></li>  
+			<li><a class="header__link" href="#">Контакты</a></li> 
 		</ul>
 	</nav>
 	<!-- End Mobile Menu -->
@@ -63,10 +63,10 @@
 				</div>
 				<div class="header__menu">
 						<a href="tel:88003500359">8-800-350-03-59</a>
-						<a href="">Как стать партнером</a>
-						<a href="">О компании</a>
-						<a href="">Контакты</a>
-						<a class="lk" href="">Отправить заявку</a>
+						<a class="header__link" href="#">Как стать партнером</a>
+						<a class="header__link" href="#about">О компании</a>
+						<a class="header__link" href="#">Контакты</a>
+						<a class="header__link" class="lk" href="#form">Отправить заявку</a>
 				</div>
 			</div>
 			<div class="header__heading">
@@ -92,13 +92,13 @@
 					</div>
 				</div>
 				<div class="header__button">
-					<a href="">Подключить</a>
+					<a class="header__link" href="#form">Подключить</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<!-- End Header>
-	<-- Over -->
+	<!-- End Header -->
+	<!-- Over -->
 	<section class="over">
 		<div class="over__wrapper">
 			<div class="over__items">
@@ -346,9 +346,9 @@
 	</!section-->
 	<!-- End Info -->
 	<!-- Questions -->
-	<section class="questions">
+	<section id="about" class="questions">
 		<div class="questions__wrapper">
-			<h2>FAQ</h2>
+			<h2>О HappyLend</h2>
 			<div class="questions__tabs">
 				<div class="questions__tab">
 					<input type="checkbox" id="tab-1" class="hide"/>
@@ -456,14 +456,14 @@
 	</!section-->
 	<!-- End Team -->
 	<!-- Connect -->
-	<div class="connect">
+	<div id="form" class="connect">
 		<div class="connect__wrapper">
 			<div class="connect__left">
 				<h2>Оставь заявку<br>и получи бонус</h2>
 				<p>Маркетинг и анализ<br>сайта бесплатно!</p>
 			</div>
 			<div class="connect__right">
-				<form>
+				<!--form>
 					<input type="text" placeholder="Наименования компании*">
 					<input type="text" placeholder="Ваше имя*">
 					<input type="text" placeholder="Ваш сайт">
@@ -473,7 +473,10 @@
 					<div class="connect__button">
 						<button>Подключить</button>
 					</div>
-				</form>
+				</form-->
+				<div class="connect__form">
+					<script>var amo_forms_params = {"id":670291,"hash":"19d708982c165842ef4db7a46db11411","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -505,7 +508,7 @@
 					<a href="">Партнерам</a>
 					<a href="">Интеллектуальная собственность</a>
 					<a href="">Правила проведения платежей</a>
-					<a href="">Документы</a>
+					<a href="docs.html">Документы</a>
 				</div>
 			</div>
 			<div class="footer__bottom">
