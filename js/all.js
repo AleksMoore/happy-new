@@ -23,14 +23,17 @@ $(function() {
         loop: true,
         items: 2,
         nav: true,
+        margin: -140,
         responsive:{ 
             0:{ 
             items: 1,
-            nav: false
+            nav: false,
+            margin: 0 
             }, 
             485:{ 
             items: 2,
-            nav: false  
+            nav: false,
+            margin: -40  
             }, 
             1200:{ 
             items: 2 
