@@ -581,6 +581,7 @@ body {
   font-size: 60px;
   color: #FFFFFF;
   margin: 0 0 60px;
+  font-weight: 900;
 }
 .header__docs {
   font-family: "Montserrat", sans-serif;
@@ -905,7 +906,7 @@ body {
 .reviews__slider::after {
   content: '';
   top: 0;
-  right: -53%;
+  right: -46%;
   position: absolute;
   width: 53%;
   height: 100%;
@@ -1007,7 +1008,7 @@ body {
   width: auto !important;
 }
 .reviews__logo {
-  margin-bottom: 60px;
+  height: 100px;
 }
 .reviews__text {
   font-family: "Montserrat", sans-serif;
@@ -1685,6 +1686,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 .footer__wrapper {
   max-width: 1200px;
@@ -1732,7 +1734,7 @@ body {
 .footer__link a {
   font-size: 18px;
   color: #6B6A69;
-  line-height: 175.78%;
+  line-height: 31px;
   margin-bottom: 20px;
   text-decoration: none;
 }
@@ -1773,7 +1775,7 @@ body {
   width: 100%;
   font-size: 12px;
   color: #6B6A69;
-  line-height: 138.8%;
+  line-height: 16px;
 }
 
 /* Laptops & Mobile */
@@ -1915,12 +1917,12 @@ body {
     content: none;
   }
   .reviews__slide {
-    max-width: 81%;
-    height: 300px;
+    max-width: 82%;
+    height: 350px;
     padding: 20px;
   }
   .reviews__logo {
-    margin-bottom: 30px;
+    height: 50px;
   }
   .reviews__text {
     font-size: 11px;
@@ -2132,6 +2134,10 @@ body {
   }
   .header__doc {
     margin-bottom: 30px;
+  }
+
+  .reviews__slide {
+    height: 300px;
   }
 }
 @media (max-width: 375px) {
